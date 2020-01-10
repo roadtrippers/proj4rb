@@ -3,7 +3,7 @@ require 'ffi'
 module Proj
   module Api
     extend FFI::Library
-    ffi_lib ['libproj' # General
+    ffi_lib ['libproj', # General
              'libproj-15', # Mingw64 Proj 6
              'libproj.so.15', # Linux (Postgresql repository )Proj 6
              'libproj.so.13', # Linux (Fedora 31) Proj 5
